@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js 14 + React + Tailwind CSS + Prisma + MongoDB + NextAuth Basic Auth starter
+
+![alt text](readme.gif 'Title')
+
+This repository serves as a comprehensive boilerplate for building scalable, modern web applications using a powerful stack that includes Next.js 14, React, Tailwind CSS, Prisma, MongoDB, and NextAuth. This setup is designed to kickstart your project with robust authentication, elegant styling, and a well-structured database model.
+
+## Features
+
+- **Next.js 14**: The latest version of the React framework for production-grade React applications.
+- **React**: A JavaScript library for building user interfaces with a focus on declarative and component-based development.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Prisma**: Next-generation ORM for Node.js and TypeScript, providing a clean and type-safe API for interacting with your database.
+- **MongoDB**: A NoSQL database known for its scalability and flexibility.
+- **NextAuth**: Integrated authentication system for Next.js applications, supporting various authentication providers.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this boilerplate, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js 14.x or later
+- npm/yarn
+- MongoDB instance (local or cloud-based)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/Claytonc40/nextauth_model.git
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate to the project directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   cd nextjs-react-tailwind-prisma-mongodb-nextauth-boilerplate
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Install dependencies:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Configure your environment variables:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   - Copy `.env.example` to `.env` and fill in your database URL and authentication provider details.
+
+5. Migrate scheme to DB `npx prisma db push` for MingoDB or `npx prisma migrate dev` for MySQL.
+
+6. Run the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Documentation
+
+For detailed instructions on how to use each component of this stack, please refer to the following documentation:
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Prisma Documentation](https://www.prisma.io/docs/)
+- [MongoDB Documentation](https://docs.mongodb.com/)
+- [NextAuth Documentation](https://next-auth.js.org/)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
